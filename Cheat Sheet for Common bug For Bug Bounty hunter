@@ -476,7 +476,7 @@ https://busk3r.medium.com/oauth-2-0-hacking-simplified-part-2-vulnerabilities-an
                  
 
 
-39  >>> HTTP request smugling 
+39  >>> HTTP request smugling (cat list_of_hosts.txt | python3 smuggler.py)
      
          https://www.youtube.com/watch?v=XC48irGjKNc
          https://portswigger.net/web-security/request-smuggling
